@@ -21,8 +21,9 @@ This repository is a collection of hands-on projects designed to build **muscle 
 A full-featured management tool for handling student records with persistent storage.
 - **Key Features:** Smart Search (ID, Name, City), Grade Calculation, Grace Marks, Sorting (High to Low).
 - **Logic Highlight:** Implemented **Custom Debouncing** for the search bar to optimize performance and **Data Normalization** for consistent database entries.
-- **Status:** ✅ Completed
-- **Storage:** LocalStorage + session Storage
+- Data Consistency: Auto-formatting names/cities (e.g., meHtAb → Mehtab) using custom transformation logic.
+- **Status:** ✅ Completed | Storage: LocalDB
+- **Persistence:** Zero data loss on refresh using LocalStorage + SessionStorage for drafts.
 
 
 
