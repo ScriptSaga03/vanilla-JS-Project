@@ -25,6 +25,8 @@ A full-featured management tool for handling student records with persistent sto
 - **Status:** ✅ Completed | Storage: LocalDB
 - **Persistence:** Zero data loss on refresh using LocalStorage + SessionStorage for drafts.
 
+- **Live link: ** https://student-pro-dashboard.onrender.com/
+
 
 
 ---
