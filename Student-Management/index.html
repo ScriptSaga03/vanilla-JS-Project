@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Pro Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>📊Stats</h2>
+        <div>
+          <p class="stats">Total Student: <span id="total-count">0</span></p>
+          <p class="stats">Class Average: <span id="class-avg">0</span></p>
+        </div>
+
+        <hr />
+        <div class="search-Box">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by name, city, grade..."
+          />
+        </div>
+        <hr />
+
+        <div class="filter-group">
+          <h4>🔍 Filters & Sorting</h4>
+          <button class="class-topper">Class Topper</button>
+          <button id="showPass">✅ Show Pass</button>
+          <button id="showFail">❌ Show Fail</button>
+          <button id="showAll">🔄 Show All</button>
+
+          
+          <hr />
+
+          <select id="sortMarks">
+            <option value="none">Sort by Marks</option>
+            <option value="highToLow">High to Low</option>
+            <option value="lowToHigh">Low to High</option>
+          </select>
+          
+          <button id="clearFilters" class="btn-clear">🧹 Clear All Filters</button>
+          <hr />
+
+          <input type="text" id="cityInput" placeholder="Enter City Name..." />
+          <button id="cityTopperBtn">🏙️ City Topper</button>
+        
+        </div>
+
+       
+      </aside>
+      <main class="main-content">
+        <header>
+          <h1>Student Management System</h1>
+          <button id="graceBtn">🎁 Add Grace Marks</button>
+        </header>
+        <form id="studentForm" class="add-form">
+          <input type="text" id="name" placeholder="Name" />
+          <input type="number" id="marks" placeholder="Marks" />
+          <input type="text" id="city" placeholder="City" />
+          <button type="submit">Add Student</button>
+        </form>
+
+        <div class="table-wrapper">
+          <div id="status-msg" style="font-weight: bold; color: blue"></div>
+          <table id="studentTable">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Marks</th>
+                <th>Grade</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
