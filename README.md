@@ -25,18 +25,19 @@ A full-featured management tool for handling student records with persistent sto
 - **Status:** ✅ Completed | Storage: LocalDB
 - **Persistence:** Zero data loss on refresh using LocalStorage + SessionStorage for drafts.
 
-- **Live link: ** https://student-pro-dashboard.onrender.com/
+- **Live Demo:** https://student-pro-dashboard.onrender.com/
 
 
 ###2. 🌤️ Weather Sphere | Dynamic Weather Dashboard
 A real-time weather forecasting tool that bridges the gap between raw API data and a beautiful, responsive user interface.
 
-Live Demo: 
-
 **Key Logic:** - Smart Debouncing: Implemented a search delay to prevent excessive API calls while typing.
 **Dynamic UI Theming:** The app automatically changes its background and text colors based on real-time weather conditions (Rain, Clouds, Clear, etc.).
 **Timezone Awareness:** Calculates and displays the accurate local time of the searched city, not just the user's current time.
 **Resilient UX:** Handles 404 errors (City not found) and loading states gracefully with custom timers.
+
+- **Live Demo:** [https://student-pro-dashboard.onrender.com/](https://weathersphere-dynamic-dashboard.onrender.com/)
+
 
 
 ---
