@@ -1,6 +1,8 @@
 🌦️ Weather Sphere - Vanilla JS API Project
 Weather Sphere is a high-performance weather application built with Vanilla JavaScript and the OpenWeatherMap API. It focuses on providing a seamless, "App-like" experience using modern JS patterns.
 
+**Live:** https://weathersphere-dynamic-dashboard.onrender.com/
+
 ✨ Special Features
 
 **Intelligent Search (Debouncing):** The app waits for the user to finish typing before fetching data, saving API bandwidth and improving performance.
@@ -12,5 +14,8 @@ Weather Sphere is a high-performance weather application built with Vanilla Java
 HTML5/CSS3 (Flexbox, Grid, Media Queries)
 JavaScript (Async/Await, Fetch API, Local Time Conversion)
 API: OpenWeatherMap API
+
+
+author : Mehtab
 
 
