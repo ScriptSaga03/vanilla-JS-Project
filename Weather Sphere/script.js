@@ -1,4 +1,5 @@
 const app = {
+  apiKey: "607271f2b7677489a68a584ae0e35f35",
   city: 'tokyo',
   baseUrl: `https://api.openweathermap.org/data/2.5/weather`,
 
