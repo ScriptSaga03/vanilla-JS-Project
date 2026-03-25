@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Inventory Manager | Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📦 Pro Inventory & Stats Dashboard</h1>
+            <div class="stats-bar">
+                <div class="stat-card">Warehouse Value <span id="totalValue"></span></div>
+                <div class="stat-card">Low Stock Alerts <span id="lowStockCount"></span></div>
+                <div class="stat-card">Top Rated Item <span id="topRatedName"></span></div>
+            </div>
+        </header>
+
+        <section class="form-section">
+            <h3>Add/Update Inventory Item</h3>
+            <form id="productForm">
+                <input type="text" id="pName" placeholder="Product Name" required>
+                <input type="number" id="pPrice" placeholder="Base Price (₹)" required>
+                <select id="pCategory">
+                    <option value="none">Select Category</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Grocery">Grocery</option>
+                    <option value="Fitness">Fitness</option>
+                </select>
+                <input type="number" id="pStock" placeholder="Initial Stock" required>
+                <input type="number" id="pDiscount" placeholder="Discount %" min="0" max="100">
+                <input type="text" id="pImage" placeholder="Image URL (Unsplash)">
+                <button type="submit" id="mainBtn">Save to Inventory</button>
+            </form>
+            <p id="status-msg"></p>
+        </section>
+
+        <section class="controls">
+            <div class="search-box">
+                <input type="text" id="pSearch" placeholder="Search by name, ID or category...">
+            </div>
+
+            <div class="filter-group">
+                <select id="filterCategory">
+                    <option value="all">Filter: All Categories</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Grocery">Grocery</option>
+                    <option value="Fitness">Fitness</option>
+                </select>
+
+                <select id="pSort">
+                    <option value="newest">Sort: Newest</option>
+                    <option value="priceHigh">Price: High to Low</option>
+                    <option value="priceLow">Price: Low to High</option>
+                    <option value="stockLow">Stock: Low to High</option>
+                     <option value="stockHigh">Stock: High to Low</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+
+            <div class="bulk-actions">
+                <button id="applyInflation" class="btn-warning">Price Hike (+5%)</button>
+                <button id="refillStock" class="btn-success">Auto-Refill Low Stock</button>
+                <button id="undoDatabase" class="btn-restore">Restore Database</button>
+                <button id="clearAll" class="btn-danger">Wipe Database</button>
+                
+                <div class="range-filter">
+                    <label>Inventory Price Cap: ₹0 - <span id="rangeVal">20000</span></label>
+                    <input type="range" id="priceRange" min="0" max="20000" step="100" value="20000">
+                </div>
+            </div>
+            
+        </section>
+
+        <div class="table-container">
+            <span id="status-Msg"></span>
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Product Details</th>
+                        <th>Category</th>
+                        <th>Base Price</th>
+                        <th>Discount</th>
+                        <th>Final Price</th>
+                        <th>Stock Status</th>
+                        <th>Rating</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="inventoryBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
