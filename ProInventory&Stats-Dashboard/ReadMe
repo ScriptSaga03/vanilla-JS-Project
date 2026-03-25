@@ -1,0 +1,24 @@
+# 📦 Pro Inventory & Stats Dashboard
+
+A high-performance Inventory Management System built with **Vanilla JavaScript**. This project focuses on heavy logic, data filtering, and real-time statistics calculation.
+
+## 🚀 Key Features (Live Now)
+- **Advanced Filtering:** Filter by category and search by Name or ID simultaneously.
+- **Dynamic Sorting:** Sort by Price (High/Low), Stock levels, and Ratings.
+- **Real-time Stats:** Automatic calculation of "Warehouse Value," "Low Stock Alerts," and "Top Rated Items."
+- **Data Simulation:** Loading states and database restoration logic.
+
+## 🛠️ Logic & Tech Stack
+- **JavaScript (ES6+):** Array methods (`map`, `filter`, `reduce`, `sort`), Object-oriented state management.
+- **HTML5/CSS3:** Grid/Flexbox layout with a professional "Admin Dashboard" UI.
+
+## 🚧 Work in Progress (Upcoming Logics)
+I am currently building the following features to strengthen the "Logic Muscle":
+- [ ] **CRUD Operations:** Complete Add/Update product logic.
+- [ ] **Data Persistence:** Integration with **LocalStorage** and **SessionStorage**.
+- [ ] **Bulk Actions:** "Price Hike (+5%)" using mass array updates.
+- [ ] **Dynamic Range Filter:** Filtering products in real-time based on the Price Cap slider.
+- [ ] **Auto-Refill Logic:** Script to automatically detect and restock "Low Stock" items.
+
+## 📸 Preview
+*(Add your screenshot link here)*
